@@ -5,9 +5,9 @@ pandoc: false
 cache: packages
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_0a6446eb3ae3_key -iv $encrypted_0a6446eb3ae3_iv -in twitter_taken.rds.enc -out twitter_taken.rds -d
-  - git config --global user.email "xie@yihui.name"
-  - git config --global user.name "Yihui Xie"
+  - openssl aes-256-cbc -K $encrypted_0a6446eb3ae3_key -iv $encrypted_0a6446eb3ae3_iv -in twitter_token.rds.enc -out twitter_token.rds -d
+  - git config --global user.email "ranae.dietzel@gmail.com"
+  - git config --global user.name "Ranae"
 
 script:
   - Rscript R/fetch.R
